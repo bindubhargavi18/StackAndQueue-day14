@@ -3,6 +3,7 @@ package com.stack.linkedlist;
 public class Stack<T> implements IStack<T>
 {
 	Node<T> head;
+	
 	@Override
 	public void push(T data)
 	{
@@ -11,6 +12,7 @@ public class Stack<T> implements IStack<T>
 		node.next=head;
 		head=node;
 	}
+	
 	@Override
 	public T pop()
 	{
@@ -22,6 +24,7 @@ public class Stack<T> implements IStack<T>
 		head=head.next;
 		return data;
 	}
+	
 	@Override
 	public boolean isEmpty()
 	{
