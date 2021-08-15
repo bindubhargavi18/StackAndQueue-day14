@@ -14,15 +14,18 @@ public class Stack<T> implements IStack<T>
 	}
 	
 	@Override
-	public T pop()
+	public void pop()
 	{
 		if(isEmpty())
 		{
 			System.out.println("Stack is empty");
 		}
-		T data=head.data;
-		head=head.next;
-		return data;
+		else
+		{
+			T data=head.data;
+			head=head.next;
+			System.out.println(data);
+		}
 	}
 	
 	@Override
