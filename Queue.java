@@ -22,6 +22,19 @@ public class Queue<T> implements IQueue<T>
 		}
 	}
 	
+	@Override
+	public void deQueue()
+	{
+		T data;
+		if(isEmpty())
+			System.out.println("Queue is empty");
+		else
+		{
+			data = front.data;
+			front = front.next;
+			System.out.println("Popped element from queue: "+data);
+		}
+	}
 	
 	@Override
 	public boolean isEmpty()

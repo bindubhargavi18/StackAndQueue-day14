@@ -8,7 +8,13 @@ public class QueueMain
 		queue.enQueue(70);
 		queue.enQueue(30);
 		queue.enQueue(50);
+		// deleting elements in queue
 
+		queue.deQueue();
+		queue.deQueue();
+		queue.deQueue();
+		queue.deQueue();
+		
 		//displaying elements in queue
 		queue.displayQueue();
 	}
